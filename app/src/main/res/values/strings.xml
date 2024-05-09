@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">newBnv</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="personID"> "@"craig_love</string>
+    <string name="accountBio"> "#"fyp #satisfying</string>
+    <string name="accountBio1"> "#"roadmarking</string>
+    <string name="profileBio">A good listener. I love having a good talk to know\neach other\'s side 😍.</string>
+
+
+    <style name="CustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

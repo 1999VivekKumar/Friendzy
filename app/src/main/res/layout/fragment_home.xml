@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.HomeFragment"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/friendzy"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:src="@drawable/friendzy"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/myStory"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/story1"
+            app:layout_constraintTop_toBottomOf="@+id/friendzy"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"
+            />
+        <TextView
+            android:id="@+id/storyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="My Story"
+            app:layout_constraintTop_toBottomOf="@+id/myStory"
+            app:layout_constraintStart_toStartOf="@id/myStory"
+            app:layout_constraintEnd_toEndOf="@id/myStory"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerStoryView"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/story_layout"
+            app:layout_constraintStart_toEndOf="@+id/myStory"
+            app:layout_constraintTop_toTopOf="@+id/myStory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/myStory"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <!--  tab layout-->
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tabLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/storyTitle"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/tablayout_design"-->
+<!--            app:tabTextColor="@color/purple"-->
+<!--            app:tabIndicatorColor="@color/background"-->
+<!--            app:tabIndicatorHeight="50dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            app:tabIndicatorFullWidth="true"-->
+<!--            app:tabIndicator="@drawable/tabitem_shape"-->
+<!--            app:tabTextAppearance="@style/CustomTextAppearance"-->
+<!--            >-->
+
+
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Make Friends"-->
+
+<!--                    />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Search Partners"-->
+<!--                    />-->
+
+
+
+<!--        </com.google.android.material.tabs.TabLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mediaRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/storyTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:listitem="@layout/reel_card_view"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

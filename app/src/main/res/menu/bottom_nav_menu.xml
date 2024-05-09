@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeIcon"
+        android:title="Home"
+        android:icon="@drawable/home_icon" />
+
+    <item
+        android:id="@+id/discoverIcon"
+        android:title="Discover"
+        android:icon="@drawable/discover_icon" />
+
+    <item
+        android:id="@+id/addIcon"
+        android:title="Add"
+        android:icon="@drawable/add_icon_" />
+
+    <item
+        android:id="@+id/friendsIcon"
+        android:title="Friends"
+        android:icon="@drawable/two_friends" />
+
+    <item
+        android:id="@+id/profileIcon"
+        android:title="Chat"
+        android:icon="@drawable/user" />
+</menu>

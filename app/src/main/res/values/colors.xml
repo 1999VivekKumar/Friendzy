@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#413F44</color>
+    <color name="pure_black">#000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background">#FDF6FD</color>
+    <color name="pink">#DD88CF</color>
+    <color name="light_pink">#F8E7F7</color>
+    <color name="purple">#4B164C</color>
+    <color name="googleBtn">#FAECF9</color>
+    <color name="textcolor">#797279</color>
+    <color name="off_white">#BFB8BF</color>
+    <color name="green">#6F8C92</color>
+    <color name="darkPink">#C82BFF</color>
+
+</resources>
